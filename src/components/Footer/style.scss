@@ -1,0 +1,16 @@
+@import '../../scss/variables';
+
+.footer {
+  color: $text-light;
+  background-color: $background-dark;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 47px;
+  }
+
+  span {
+    font-weight: 700;
+  }
+}

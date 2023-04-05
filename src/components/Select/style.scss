@@ -1,0 +1,67 @@
+@import '../../scss/variables';
+
+.select {
+  position: relative;
+  width: 196px;
+  padding: 10px 12px;
+  line-height: 1.2;
+  color: #000;
+  cursor: pointer;
+  user-select: none;
+  background-color: $background-white;
+  border: 1px solid transparent;
+  border-radius: 0.625rem;
+  transition: border 0.3s ease;
+
+  &:hover {
+    border: 1px solid #4dbec4;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    width: 13px;
+    height: 7px;
+    transition: transform 0.25s ease;
+    transform: translateY(-50%);
+
+    &_open {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &__option-list {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    padding: 0.5625rem 0.75rem;
+    visibility: hidden;
+    background-color: $background-white;
+    border-radius: 0.625rem;
+    box-shadow: 0 8px 24px rgba(129, 135, 189, 0.15);
+    opacity: 0;
+    transition: all 0.25s ease;
+
+    &_open {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__option {
+    padding: 0.3125rem;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $background-gray;
+    }
+
+    &_selected {
+      background-color: #d1f1f3;
+    }
+  }
+}

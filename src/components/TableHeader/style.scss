@@ -1,0 +1,43 @@
+@import '../../scss/variables';
+
+.table-header {
+  color: $text-light;
+  background-color: $background-dark;
+  border-radius: 10px;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+
+    &:nth-child(1) {
+      width: 11.6%;
+    }
+
+    &:nth-child(2) {
+      width: 11.3%;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      width: 9.3%;
+    }
+
+    &:nth-child(5) {
+      width: 14.1%;
+    }
+
+    &:nth-child(6) {
+      width: 23.2%;
+    }
+
+    &:nth-child(7) {
+      width: 9.6%;
+    }
+
+    &:nth-child(8) {
+      width: 11.6%;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order",
+    "stylelint-config-prettier-scss"
+  ],
+  "rules": {
+    "font-family-name-quotes": "always-unless-keyword",
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
+    "font-weight-notation": "numeric"
+  }
+}

@@ -1,0 +1,61 @@
+@import '../../scss/variables';
+
+.pagination {
+  user-select: none;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+  }
+
+  &__body {
+    display: flex;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      transition: border 0.3s ease;
+
+      &:hover {
+        border: 1px solid #4dbec4;
+      }
+    }
+
+    li {
+      svg {
+        fill: #8a8a8a;
+        transition: fill 0.2s ease;
+      }
+
+      &:not(:last-child) {
+        margin: 0 8px 0 0;
+      }
+
+      &.selected {
+        color: $primary;
+
+        a {
+          border-color: $primary;
+        }
+      }
+
+      &.previous.disabled,
+      &.next.disabled {
+        pointer-events: none;
+
+        svg {
+          fill: #e0e0e0;
+        }
+      }
+    }
+  }
+}

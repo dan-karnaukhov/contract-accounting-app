@@ -1,0 +1,14 @@
+.contract-table {
+  &__contract-card {
+    margin: 12px 0 0;
+  }
+
+  &__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+  }
+}

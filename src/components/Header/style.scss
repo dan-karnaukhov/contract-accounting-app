@@ -1,0 +1,19 @@
+@import '../../scss/variables';
+
+.header {
+  background-color: $background-white;
+  box-shadow: 0 8px 24px rgba(129, 135, 189, 0.15);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    font-weight: 500;
+  }
+
+  &__project-name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

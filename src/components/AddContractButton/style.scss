@@ -1,0 +1,22 @@
+@import '../../scss/variables';
+
+.add-contract-button {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  font-size: inherit;
+  color: $text-light;
+  background-color: $primary;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #4dbec4;
+  }
+
+  &__icon {
+    fill: $background-white;
+  }
+}

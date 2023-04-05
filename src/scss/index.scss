@@ -1,0 +1,11 @@
+@import './reset';
+@import './fonts';
+@import './variables';
+
+body {
+  font-family: $font-family;
+  font-size: 15px;
+  line-height: 1;
+  color: $text-dark;
+  background-color: $background-gray;
+}
